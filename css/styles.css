@@ -496,7 +496,7 @@ p {
 
 /* About */
 .about-page .hero {
-  background-image: url("/img/stickynotes.jpg");
+  background-image: url('../img/stickynotes.jpg');
 }
 
 .about-page .hero::before {
@@ -505,7 +505,7 @@ p {
 
 /* Services */
 .services-page .hero {
-  background-image: url("/img/foil.jpg");
+  background-image: url('../img/foil.jpg');
 }
 
 .services-page .hero::before {
@@ -514,7 +514,7 @@ p {
 
 /* Work */
 .work-page .hero {
-  background-image: url("/img/paint.jpg");
+  background-image: url('../img/paint.jpg');
 }
 
 .work-page .hero::before {
@@ -1568,6 +1568,7 @@ p {
 .footer-meta {
   justify-content: center;
 }
+
 
 
 
