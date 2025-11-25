@@ -424,17 +424,26 @@ p {
 .footer-copy {
   margin: 0;
 }
-/* Mobile footer nav: 3 links on top, 2 on bottom */
-@media (max-width: 600px) {
-  .footer-nav-list {
-    justify-content: center;       /* you already have this, but safe here */
-  }
+/* Footer rows (mobile-friendly two-row layout) */
+.footer-nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
 
-  .footer-nav-list li {
-    flex: 0 0 33.33%;              /* 3 items per row */
-    text-align: center;
+/* Smaller spacing between the two rows */
+.footer-nav-row-bottom {
+  margin-bottom: 1.25rem;
+}
+
+/* Mobile: make sure rows center cleanly */
+@media (max-width: 600px) {
+  .footer-nav-row {
+    flex-wrap: nowrap;      /* keeps each row on a single line */
   }
 }
+
 /* ===========================
    Buttons
    =========================== */
@@ -1578,6 +1587,7 @@ p {
 .footer-meta {
   justify-content: center;
 }
+
 
 
 
