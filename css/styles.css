@@ -490,10 +490,6 @@ p {
   background-image: url("img/water.jpg");
 }
 
-.home-page .hero::before {
-  background: rgba(0, 0, 0, 0.75); /* darkened water look */
-}
-
 /* About */
 .about-page .hero {
   background-image: url("/img/stickynotes.jpg");
@@ -1568,5 +1564,6 @@ p {
 .footer-meta {
   justify-content: center;
 }
+
 
 
