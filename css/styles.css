@@ -424,23 +424,36 @@ p {
 .footer-copy {
   margin: 0;
 }
-/* Footer rows (mobile-friendly two-row layout) */
-.footer-nav-row {
+
+/* Desktop / Tablet – all in one row */
+.footer-nav-list {
   display: flex;
-  justify-content: center;
   gap: 1.25rem;
-  margin-bottom: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Smaller spacing between the two rows */
-.footer-nav-row-bottom {
-  margin-bottom: 1.25rem;
+.footer-group-1,
+.footer-group-2 {
+  display: flex;
+  gap: 1.25rem;
 }
 
-/* Mobile: make sure rows center cleanly */
+
+/* MOBILE – stack into 2 centered rows */
 @media (max-width: 600px) {
-  .footer-nav-row {
-    flex-wrap: nowrap;      /* keeps each row on a single line */
+  .footer-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-group-1,
+  .footer-group-2 {
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+    width: 100%;
   }
 }
 
@@ -1587,6 +1600,7 @@ p {
 .footer-meta {
   justify-content: center;
 }
+
 
 
 
