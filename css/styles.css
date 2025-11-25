@@ -424,7 +424,17 @@ p {
 .footer-copy {
   margin: 0;
 }
+/* Mobile footer nav: 3 links on top, 2 on bottom */
+@media (max-width: 600px) {
+  .footer-nav-list {
+    justify-content: center;       /* you already have this, but safe here */
+  }
 
+  .footer-nav-list li {
+    flex: 0 0 33.33%;              /* 3 items per row */
+    text-align: center;
+  }
+}
 /* ===========================
    Buttons
    =========================== */
@@ -1568,6 +1578,7 @@ p {
 .footer-meta {
   justify-content: center;
 }
+
 
 
 
